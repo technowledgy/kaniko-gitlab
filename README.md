@@ -1,4 +1,4 @@
-# vlux
+# kaniko-gitlab
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/technowledgy/kaniko-gitlab/Push%20to%20main)
 ![GitHub](https://img.shields.io/github/license/technowledgy/kaniko-gitlab)
