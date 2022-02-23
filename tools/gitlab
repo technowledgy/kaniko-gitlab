@@ -3,7 +3,10 @@ set -eu
 
 mkdir -p /kaniko/.docker
 
-srv="${CI_REGISTRY}"
-upw="$(printf "%s:%s" "${CI_REGISTRY_USER}" "${CI_REGISTRY_PASSWORD}" | base64 | tr -d '\n')"
+dep_srv="${CI_DEPENDENCY_PROXY_SERVER}"
+dep_upw="$(printf "%s:%s" "${CI_DEPENDENCY_PROXY_USER}" "${CI_DEPENDENCY_PROXY_PASSWORD}" | base64 | tr -d '\n')"
 
-echo "{\"auths\":{\"${srv}\":{\"auth\":\"${upw}\"}}}" > /kaniko/.docker/config.json
+reg_srv="${CI_REGISTRY}"
+reg_upw="$(printf "%s:%s" "${CI_REGISTRY_USER}" "${CI_REGISTRY_PASSWORD}" | base64 | tr -d '\n')"
+
+echo "{\"auths\":{\"${dep_srv}\":{\"auth\":\"${dep_upw}\"},\"${reg_srv}\":{\"auth\":\"${reg_upw}\"}}}" > /kaniko/.docker/config.json
