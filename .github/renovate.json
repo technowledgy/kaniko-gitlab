@@ -7,6 +7,10 @@
     {
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "dependencies"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     }
   ]
 }
