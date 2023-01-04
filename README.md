@@ -1,6 +1,6 @@
 # kaniko-gitlab
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/technowledgy/kaniko-gitlab/Push%20to%20main)
+![GitHub Workflow Status](https://img.shields.io/actions/github/workflow/status/technowledgy/kaniko-gitlab/push.yaml?branch=main)
 ![GitHub](https://img.shields.io/github/license/technowledgy/kaniko-gitlab)
 
 Slightly modified kaniko executor docker image to run in GitLab CI. The image contains a helper script `gitlab`, which adds a config file to connect to the GitLab-provided container registry as described in the [GitLab docs](https://docs.gitlab.com/ee/ci/docker/using_kaniko.html).
