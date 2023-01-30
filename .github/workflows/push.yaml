@@ -26,7 +26,7 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build & Push
-        uses: docker/build-push-action@v3.3.0
+        uses: docker/build-push-action@v3.3.1
         with:
           push: true
           tags: technowledgy/kaniko-gitlab:latest
