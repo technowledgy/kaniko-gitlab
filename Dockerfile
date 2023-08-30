@@ -1,4 +1,4 @@
-FROM gcr.io/kaniko-project/executor:v1.14.0-debug
+FROM gcr.io/kaniko-project/executor:v1.15.0-debug
 
 LABEL author Wolfgang Walther
 LABEL maintainer opensource@technowledgy.de
