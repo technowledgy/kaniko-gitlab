@@ -18,4 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3.6.0
       - name: Build
-        uses: docker/build-push-action@v4.1.1
+        uses: docker/build-push-action@v4.2.0
