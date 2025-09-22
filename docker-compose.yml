@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   hadolint:
-    image: hadolint/hadolint:v2.13.1
+    image: hadolint/hadolint:v2.14.0
     working_dir: /mnt
     volumes:
       - ./:/mnt
